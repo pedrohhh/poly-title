@@ -1,0 +1,40 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap-readable.min.css">
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="../js/jquery-1.11.1.min.js" charset="utf-8"></script>
+<script src="../js/bootstrap.min.js" charset="utf-8"></script>
+
+<dom-module id="title-element">
+    <template>
+        <style>
+            .titulo{
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-weight: bold;
+                font-size: 2.2em;  
+                color: #d92906;             
+            }
+        </style>
+        
+        <p class$="{{elementstyle}}">{{title}}</p> 
+        
+    </template> 
+     
+    <script>
+        Polymer({
+            is: "title-element",
+            properties: {
+                title: {
+                    type: String,
+                    value: "Title"
+                },
+                elementstyle: {
+                    type: String,
+                    value: "titulo"
+                }
+            }
+        });
+        
+
+    </script>
+</dom-module>
